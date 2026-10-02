@@ -54,12 +54,13 @@ footer span a{margin-left:22px}
       <a href="#hr">HR Attrition</a>
       <a href="#cx">Payment Operations</a>
       <a href="#sales">Sales Analytics</a>
+      <a href="#property">Real Estate Analytics</a>
     </div>
   </div>
 </header>
-
+ 
 <main class="wrap">
-
+ 
 <section class="project" id="hr">
   <h2>HR Attrition Analytics</h2>
   <ul class="tags"><li>Power BI</li><li>DAX</li><li>Power Query M</li><li>Microsoft Fabric</li></ul>
@@ -84,7 +85,7 @@ footer span a{margin-left:22px}
     </div>
   </div>
 </section>
-
+ 
 <section class="project" id="cx">
   <h2>Payment Operations: Customer Experience Overview</h2>
   <ul class="tags"><li>Power BI</li><li>DAX</li><li>SQL</li><li>Python</li></ul>
@@ -109,7 +110,7 @@ footer span a{margin-left:22px}
     </div>
   </div>
 </section>
-
+ 
 <section class="project" id="sales">
   <h2>Sales Analytics Overview</h2>
   <ul class="tags"><li>Power BI</li><li>DAX</li><li>Star Schema</li><li>Power Query M</li><li>Microsoft Fabric</li><li>Medallion Architecture</li></ul>
@@ -134,9 +135,35 @@ footer span a{margin-left:22px}
     </div>
   </div>
 </section>
-
+ 
+<section class="project" id="property">
+  <h2>Real Estate Analytics Suite</h2>
+  <ul class="tags"><li>Python</li><li>pandas</li><li>scikit-learn</li><li>Streamlit</li><li>Plotly</li></ul>
+  <div class="frame">
+    <iframe title="Real Estate Analytics Suite app" loading="lazy" allowfullscreen style="height:760px"
+      src="https://property-price-prediction-gurgaon.streamlit.app/?embed=true"></iframe>
+  </div>
+  <a class="open" href="https://property-price-prediction-gurgaon.streamlit.app/" target="_blank" rel="noopener">Open the app in a new tab (it may take a moment to wake up)</a>
+  <span class="open"> · </span><a class="open" href="https://github.com/Vamshi-Vaddepalli/Property-Price-Prediction" target="_blank" rel="noopener">View the code on GitHub</a>
+  <div class="copy">
+    <div>
+      <h3>Business use case</h3>
+      <p>A Streamlit app for exploring the Property market in Gurgaon city, built on scraped and cleaned listings of flats and independent houses. It helps home buyers, sellers, investors and analysts estimate a fair price, understand how prices vary across sectors, and find comparable apartments.</p>
+    </div>
+    <div>
+      <h3>Primary objectives</h3>
+      <ul>
+        <li><strong>Price prediction:</strong> a Random Forest model (R² of about 0.90) estimates a price range in crores from property type, sector, bedrooms, bathrooms, balconies, age, built-up area, furnishing, luxury category and floor category. The range widens for higher-priced properties, where uncertainty is greater.</li>
+        <li><strong>Market analysis:</strong> interactive charts show average price per sq ft by sector on a map, amenity word clouds, area against price, BHK distribution and a luxury score map, with filters by sector and property type.</li>
+        <li><strong>Recommendations:</strong> search listings within a chosen radius of a location, or pick an apartment to get the top 5 most similar listings ranked by a similarity score on location, amenities and pricing.</li>
+        <li><strong>Data pipeline:</strong> listings were scraped, deduplicated and cleaned (missing values and outliers), then engineered into model-ready features.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+ 
 </main>
-
+ 
 <footer>
   <div class="wrap">
     <div>Vamshi Vaddepalli, Power BI & Data Analytics Portfolio</div>
@@ -145,3 +172,4 @@ footer span a{margin-left:22px}
 </footer>
 </body>
 </html>
+ 
