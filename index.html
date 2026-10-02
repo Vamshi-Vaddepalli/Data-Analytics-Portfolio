@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vamshi Vaddepalli | Power BI & Data Analytics Portfolio</title>
+<meta name="description" content="Power BI dashboards covering HR attrition, customer experience and sales analytics, built with DAX, data modeling and Microsoft Fabric.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f6f8;--paper:#fff;--ink:#14213d;--muted:#52607a;--line:#d9dee7;--accent:#b97800;--chip:#fff4d6;--chipink:#6b4600}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Source Sans 3",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--ink)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header{background:#e3ebf7;color:var(--ink);padding:64px 0 44px;border-bottom:1px solid #c9d5ea}
+header h1{font-size:clamp(2.4rem,6vw,4.2rem);letter-spacing:-.02em}
+header p{max-width:60ch;margin:18px 0 0;color:#3b4a66;font-size:1.15rem}
+.jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.jump a{color:var(--ink);background:#fff;text-decoration:none;border:1px solid #b9c7e0;border-radius:999px;padding:6px 16px;font-size:.95rem;font-weight:600}
+.jump a:hover{background:var(--chip);border-color:#e2b44a}
+main.wrap{padding-top:44px;padding-bottom:24px}
+.project{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:36px;margin:0 0 36px;box-shadow:0 10px 30px rgba(20,33,61,.07);scroll-margin-top:20px}
+.project h2{font-size:clamp(1.7rem,3.4vw,2.4rem)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px;padding:0;list-style:none}
+.tags li{background:var(--chip);color:var(--chipink);border-radius:6px;padding:3px 11px;font-size:.9rem;font-weight:600}
+.frame{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px}
+.frame iframe{display:block;width:100%;aspect-ratio:3/2;min-height:360px;border:0;border-radius:6px;background:#eef0f4}
+.open{display:inline-block;margin:12px 2px 0;font-size:.95rem;color:var(--muted)}
+.copy{display:grid;grid-template-columns:1fr;gap:28px;margin-top:30px}
+.copy h3{font-size:1.25rem;margin-bottom:10px}
+.copy p{margin:0;max-width:none}
+.copy ul{margin:0;padding-left:22px;columns:2;column-gap:56px}
+.copy li{margin:0 0 14px;break-inside:avoid}
+.copy li::marker{color:var(--accent)}
+footer{background:var(--ink);color:#d5dbe8;padding:36px 0}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;align-items:center}
+footer a{color:#fff;font-weight:600;text-underline-offset:5px;text-decoration-color:#f2b632}
+footer span a{margin-left:22px}
+@media (max-width:820px){.copy ul{columns:1}.project{padding:22px}.frame iframe{min-height:300px}header{padding:48px 0 34px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Vamshi Vaddepalli</h1>
+    <p>Data analyst. I turn raw data into dashboards and insights that answer business questions, using Power BI, SQL, Python and Fabric.</p>
+    <div class="jump" aria-label="Projects">
+      <a href="#hr">HR Attrition</a>
+      <a href="#cx">Payment Operations</a>
+      <a href="#sales">Sales Analytics</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section class="project" id="hr">
+  <h2>HR Attrition Analytics</h2>
+  <ul class="tags"><li>Power BI</li><li>DAX</li><li>Power Query M</li><li>Microsoft Fabric</li></ul>
+  <div class="frame">
+    <iframe title="HR Attrition Analytics dashboard" loading="lazy" allowfullscreen
+      src="https://app.fabric.microsoft.com/view?r=eyJrIjoiYTFhYjEyMjQtOWFkMS00ZTZjLWI0M2EtNGJlYjAxYzJjNzZlIiwidCI6IjZmMTdmMmVlLTA0YzYtNDNkZS1hMWVhLTRhODgwZDg4ZTI2ZCJ9"></iframe>
+  </div>
+  <a class="open" href="https://app.fabric.microsoft.com/view?r=eyJrIjoiYTFhYjEyMjQtOWFkMS00ZTZjLWI0M2EtNGJlYjAxYzJjNzZlIiwidCI6IjZmMTdmMmVlLTA0YzYtNDNkZS1hMWVhLTRhODgwZDg4ZTI2ZCJ9" target="_blank" rel="noopener">Open the dashboard in a new tab</a>
+  <div class="copy">
+    <div>
+      <h3>Business use case</h3>
+      <p>Built for HR leaders, talent acquisition and retention teams, and executives who need to understand why employees leave. It analyses 1,470 employees, 237 of whom have left (16.1% attrition against an industry average of 10 to 15%). Attrition is broken down by department, job role and salary band, with a deep-dive page and gender and department filters, so HR can see where turnover is concentrated.</p>
+    </div>
+    <div>
+      <h3>Primary business objectives</h3>
+      <ul>
+        <li><strong>Attrition monitoring and benchmarking:</strong> track the attrition rate (16.1%) against the industry benchmark, alongside employees who left (237), headcount (1,470), average income (6,503 monthly) and average tenure of leavers (5.1 years).</li>
+        <li><strong>Department and role risk:</strong> Sales (20.6%) and Human Resources (19.0%) lead by department. Laboratory Technician (23.9%) and Human Resources (23.1%) lead by job role, while Research Director is only 2.5%.</li>
+        <li><strong>Compensation and retention:</strong> the Under 3k salary band loses 28.6% of its staff, falling to 8.9% in the Above 10k band, which supports pay reviews and retention incentives.</li>
+        <li><strong>Deep-dive risk factors:</strong> compare attrition by age group (35.8% for ages 18 to 25), overtime (30.5% vs 10.4%), marital status, business travel and education field, then drill down with the decomposition tree.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="project" id="cx">
+  <h2>Payment Operations: Customer Experience Overview</h2>
+  <ul class="tags"><li>Power BI</li><li>DAX</li><li>SQL</li><li>Python</li></ul>
+  <div class="frame">
+    <iframe title="Customer Experience Overview dashboard" loading="lazy" allowfullscreen
+      src="https://app.fabric.microsoft.com/view?r=eyJrIjoiMWZkMDY3MDctN2Y5OC00MDM3LTk5ZjctOGQzZmUwZjdiYWM5IiwidCI6IjZmMTdmMmVlLTA0YzYtNDNkZS1hMWVhLTRhODgwZDg4ZTI2ZCJ9"></iframe>
+  </div>
+  <a class="open" href="https://app.fabric.microsoft.com/view?r=eyJrIjoiMWZkMDY3MDctN2Y5OC00MDM3LTk5ZjctOGQzZmUwZjdiYWM5IiwidCI6IjZmMTdmMmVlLTA0YzYtNDNkZS1hMWVhLTRhODgwZDg4ZTI2ZCJ9" target="_blank" rel="noopener">Open the dashboard in a new tab</a>
+  <div class="copy">
+    <div>
+      <h3>Business use case</h3>
+      <p>Built for customer support heads, payment operations leads and executives. It tracks service quality across 52,000 support tickets and shows where SLA, first contact resolution (FCR) and repeat contact targets are missed. Breaking performance down by month, product, issue category and root-cause dependency (Technology/Vendor, Bank/Network, Merchant, Internal Ops, Customer) shows which issues and partners drive poor customer satisfaction, so teams can set owners and 30-day targets.</p>
+    </div>
+    <div>
+      <h3>Primary business objectives</h3>
+      <ul>
+        <li><strong>Service level and resolution tracking:</strong> monitor SLA achievement (70.56%), first contact resolution (54.65%), 7-day repeat contact rate (23.02%) and average CSAT (4.15). The monthly view explains the May and June dip, when volume rose from about 7 to 8K tickets a month to over 10K.</li>
+        <li><strong>Root-cause and issue prioritisation:</strong> identify the categories missing leadership targets (Refund Delayed, Transaction Pending, Merchant Settlement, Unauthorized Transaction) and trace them to their dependencies. Technology/Vendor and Bank/Network drive the weakest results.</li>
+        <li><strong>Product and channel performance:</strong> compare volume and resolution hours across UPI (48.95% of tickets), Wallet, Credit Card, BNPL and Merchant QR, filtered by month, city tier and region.</li>
+        <li><strong>Action planning and accountability:</strong> turn findings into 30-day actions with named owners, baselines and targets, such as lifting Refund Delayed SLA from 23% to 45% through vendor escalation.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="project" id="sales">
+  <h2>Sales Analytics Overview</h2>
+  <ul class="tags"><li>Power BI</li><li>DAX</li><li>Star Schema</li><li>Power Query M</li><li>Microsoft Fabric</li><li>Medallion Architecture</li></ul>
+  <div class="frame">
+    <iframe title="Sales Analytics Overview dashboard" loading="lazy" allowfullscreen
+      src="https://app.fabric.microsoft.com/view?r=eyJrIjoiYWE4ZjBkYzUtMWNmYS00YmVkLWE0YTItZWY0NzJiZDhiMTBkIiwidCI6IjZmMTdmMmVlLTA0YzYtNDNkZS1hMWVhLTRhODgwZDg4ZTI2ZCJ9"></iframe>
+  </div>
+  <a class="open" href="https://app.fabric.microsoft.com/view?r=eyJrIjoiYWE4ZjBkYzUtMWNmYS00YmVkLWE0YTItZWY0NzJiZDhiMTBkIiwidCI6IjZmMTdmMmVlLTA0YzYtNDNkZS1hMWVhLTRhODgwZDg4ZTI2ZCJ9" target="_blank" rel="noopener">Open the dashboard in a new tab</a>
+  <div class="copy">
+    <div>
+      <h3>Business use case</h3>
+      <p>Built for sales directors, regional managers and executives who need revenue, order volume and customer value in one view. It covers ₹63.14M in revenue (about $657.66K) across 6,268 orders, with date, month, quarter and year filters. The data runs through a bronze, silver and gold pipeline in Microsoft Fabric into a star schema, and the report shows which categories, regions and customers drive the business.</p>
+    </div>
+    <div>
+      <h3>Primary business objectives</h3>
+      <ul>
+        <li><strong>Revenue and order trends:</strong> track monthly revenue (roughly ₹4.5M to ₹5.7M) against order counts, with average revenue per order (₹10.10K) and average quantity per order (8.97).</li>
+        <li><strong>Product category mix:</strong> Electronics brings in ₹45M, about 71% of revenue. Office Supplies leads in orders and units (77% of quantity) but earns only ₹5M, which points to pricing and portfolio opportunities.</li>
+        <li><strong>Regional performance:</strong> benchmark North (₹16.2M), West (₹16.1M), East (₹15.9M) and South (₹14.9M) on revenue and order count to find under-performing markets.</li>
+        <li><strong>Key customers:</strong> rank the top 10 customers by revenue and orders, led by Vivek Chopra at ₹1.97M, to support account management and retention.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Vamshi Vaddepalli, Power BI & Data Analytics Portfolio</div>
+    <span><a href="https://www.linkedin.com/in/vamshi-vaddepalli-b286501b6/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/Vamshi-Vaddepalli/" target="_blank" rel="noopener">GitHub</a></span>
+  </div>
+</footer>
+</body>
+</html>
